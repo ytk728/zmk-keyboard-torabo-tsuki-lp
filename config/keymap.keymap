@@ -30,21 +30,21 @@
 
         layer_1 {
             bindings = <
-&none  &none         &none             &none              &none         &none                                   &none                 &none                  &none         &none          &none            &none
-&none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                            &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0     &none
-&none  &kp AT        &kp TILDE         &kp EQUAL          &kp ASTERISK  &kp PLUS      &none           &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp SEMICOLON  &kp QUESTION     &none
-&none  &kp GRAVE     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH     &kp MINUS     &kp UNDERSCORE  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COMMA     &kp PERIOD     &kp EXCLAMATION  &none
-&none  &trans        &trans            &trans             &trans        &trans        &trans          &trans    &trans                &none                  &none         &trans         &trans           &none
+&none  &none         &none             &none              &none         &none                         &none                 &none                  &none         &none          &none            &none
+&none  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                  &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0     &none
+&none  &kp AT        &kp TILDE         &kp EQUAL          &kp ASTERISK  &kp PLUS      &none   &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp SEMICOLON  &kp QUESTION     &none
+&none  &kp GRAVE     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SLASH     &kp MINUS     &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COMMA     &kp PERIOD     &kp EXCLAMATION  &none
+&none  &trans        &trans            &trans             &trans        &trans        &trans  &trans  &trans                &none                  &none         &trans         &trans           &none
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans         &trans            &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)      &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp LEFT_BRACE  &kp MINUS      &kp EQUAL         &kp RIGHT_BRACE    &kp COLON      &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
+&none  &none   &none                   &none                   &none                    &none                              &none          &none             &none           &none            &none          &none
+&none  &kp F3  &kp F4                  &kp F5                  &kp F6                   &kp F7                             &kp F8         &kp F9            &kp F10         &kp F11          &kp F12        &none
+&none  &kp F2  &kp LC(LS(NUMBER_5))    &kp LC(LG(UP_ARROW))    &kp K_MUTE               &kp C_VOLUME_UP    &none   &none   &kp LESS_THAN  &kp GREATER_THAN  &kp UP_ARROW    &kp AMPERSAND    &kp PIPE       &none
+&none  &kp F1  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(DOWN_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp C_VOLUME_DOWN  &trans  &trans  &kp HASH       &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH  &none
+&none  &trans  &trans                  &trans                  &trans                   &trans             &trans  &trans  &trans         &none             &none           &trans           &trans         &none
             >;
         };
 
