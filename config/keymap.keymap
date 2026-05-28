@@ -69,11 +69,11 @@
 
         slack_layer {
             bindings = <
-&none  &none   &none    &none               &none   &none                   &none   &none   &none   &none   &none   &none
-&none  &trans  &trans   &trans              &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &lt 4 S  &kp LA(UP_ARROW)    &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans   &kp LA(DOWN_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans   &trans              &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &none
+&none  &none               &none    &none             &none   &none                              &none   &none                 &none                 &none                 &none   &none
+&none  &trans              &trans   &trans            &trans  &trans                             &trans  &kp LG(LS(NUMBER_7))  &kp LG(LS(NUMBER_8))  &kp LG(LS(NUMBER_9))  &trans  &none
+&none  &kp LA(UP_ARROW)    &lt 4 S  &kp LA(UP_ARROW)  &trans  &trans             &none   &none   &trans  &trans                &trans                &trans                &trans  &none
+&none  &kp LA(DOWN_ARROW)  &trans   &kp LS(LG(C))     &trans  &kp LS(LA(LG(C)))  &trans  &trans  &trans  &trans                &trans                &trans                &trans  &none
+&none  &trans              &trans   &trans            &trans  &trans             &trans  &trans  &trans  &none                 &none                 &trans                &trans  &none
             >;
         };
     };
