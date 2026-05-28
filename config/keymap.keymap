@@ -21,7 +21,7 @@
             bindings = <
 &none  &none      &none           &none     &none             &none                                            &none      &none  &none      &none       &none          &none
 &none  &kp Q      &kp W           &kp E     &kp R             &kp T                                            &kp Y      &kp U  &kp I      &kp O       &kp P          &none
-&none  &kp A      &kp S           &kp D     &kp F             &kp G        &none             &none             &kp H      &kp J  &kp K      &kp L       &kp BACKSPACE  &none
+&none  &kp A      &lt 4 S         &kp D     &kp F             &kp G        &none             &none             &kp H      &kp J  &kp K      &kp L       &kp BACKSPACE  &none
 &none  &kp Z      &kp X           &kp C     &kp V             &kp B        &kp MINUS         &kp INS           &kp N      &kp M  &mkp LCLK  &mkp RCLK   &kp TAB        &none
 &none  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_COMMAND  &lt 3 SPACE  &lt 2 LANGUAGE_2  &lt 1 LANGUAGE_1  &kp ENTER  &none  &none      &kp DELETE  &kp ESCAPE     &none
             >;
@@ -39,16 +39,26 @@
 
         layer_2 {
             bindings = <
-&none  &none   &none                   &none                   &none                    &none                              &none          &none             &none           &none            &none          &none
-&none  &kp F3  &kp F4                  &kp F5                  &kp F6                   &kp F7                             &kp F8         &kp F9            &kp F10         &kp F11          &kp F12        &none
-&none  &kp F2  &kp LS(LG(NUMBER_5))    &kp LC(LG(UP_ARROW))    &kp K_MUTE               &kp C_VOLUME_UP    &none   &none   &kp LESS_THAN  &kp GREATER_THAN  &kp UP_ARROW    &kp AMPERSAND    &kp PIPE       &none
-&none  &kp F1  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(DOWN_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp C_VOLUME_DOWN  &trans  &trans  &kp HASH       &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH  &none
-&none  &trans  &trans                  &trans                  &trans                   &trans             &trans  &trans  &trans         &none             &none           &trans           &trans         &none
+&none  &none   &none                 &none        &none           &none                            &none          &none             &none           &none            &none        &none
+&none  &kp F3  &kp F4                &kp F5       &kp F6          &kp F7                           &kp F8         &kp F9            &kp F10         &kp F11          &kp F12      &none
+&none  &kp F2  &kp LS(LG(NUMBER_5))  &kp DOLLAR   &kp LEFT_BRACE  &kp RIGHT_BRACE  &none   &none   &kp LESS_THAN  &kp GREATER_THAN  &kp UP_ARROW    &kp AMPERSAND    &kp PERCENT  &none
+&none  &kp F1  &kp INS               &kp INT_YEN  &kp BACKSLASH   &kp UNDERSCORE   &trans  &trans  &kp HASH       &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PIPE     &none
+&none  &trans  &trans                &trans       &trans          &trans           &trans  &trans  &trans         &none             &none           &trans           &trans       &none
             >;
         };
 
         layer_3 {
             bindings = <
+&none  &none   &none   &none   &none   &none                   &none   &none                   &none                   &none                    &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                  &trans                  &trans                   &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans                  &kp LC(LG(UP_ARROW))    &trans                   &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(DOWN_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none                   &none                   &trans                   &trans  &none
+            >;
+        };
+
+        vscode_layer {
+            bindings = <
 &none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
 &none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
@@ -57,13 +67,13 @@
             >;
         };
 
-        layer_4 {
+        slack_layer {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &none
+&none  &none   &none    &none               &none   &none                   &none   &none   &none   &none   &none   &none
+&none  &trans  &trans   &trans              &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &lt 4 S  &kp LA(UP_ARROW)    &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans   &kp LA(DOWN_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans   &trans              &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &none
             >;
         };
     };
